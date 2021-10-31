@@ -9,8 +9,13 @@ namespace StoryState
     /*
     *   TextPrinter
     *
-    *   The TextPrinter asynchronously prints text onto the screen in StoryState mode. Used in both
-    *   DialogueState and CinematicState.
+    *   The main class of the dialogue system, the TextPrinter asynchronously prints text onto the
+    *   screen. Can be used both for cinematic subtitles and RPG-style dialogue boxes.
+    *   
+    *   A class implementing the interface TextPrinterUI must be provided when creating an instance of
+    *   the class. The TextPrinter must also be assigned to a TextPrinterTasks component with a
+    *   PandaBehaviour sibling. As the PandaBehaviour is running, the TextPrinter will update the
+    *   TextPrinterUI's MainText object.
     */
     public class TextPrinter
     {
