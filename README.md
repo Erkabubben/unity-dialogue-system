@@ -5,9 +5,9 @@ This dialogue system for Unity is intended to be used along with [Text Mesh Pro]
 
 ![alt text](https://jolly-liskov-e9f154.netlify.app/public/screenshots/17.jpg "Screenshot - Startle Response")
 
-While this may sound like a simple mechanic to implement, it can turn out to be surprisingly time-consuming. This solution provides a great number of features beyond the bare minimum, but is still very straight-forward and should be easy to follow and understand, at least for a user who is already familiar with Panda BT.
+While this may sound like a simple mechanic to implement, it can turn out to be surprisingly time-consuming. This solution provides a number of features beyond the bare minimum, but is still very straight-forward and should be easy to follow and understand, at least for a user who is already familiar with Panda BT.
 
-Some features:
+### Some features:
 - Includes three separate modes for how the text will be printed.
 - Soft-coded dialogue participants.
 - Pitch of the print sound can be adjusted to represent the speaker's voice pitch.
