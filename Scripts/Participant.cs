@@ -39,7 +39,7 @@ namespace StoryState
         public static Participant[] SetParticipants(string participantNames)
         {
             // Set up reference to player character.
-            Character playerCharacter = null; // = TODO: GET CHARACTER
+            Character playerCharacter = null; // = TODO: GET CHARACTER ASSET
             // Parse participantNames string to array and trim names.
             string[] names = participantNames.Split(',');
             for (int i = 0; i < names.Length; i++)
@@ -96,7 +96,7 @@ namespace StoryState
             }
             else
             {
-                Character secondParticipant = null; // = TODO: GET CHARACTER
+                Character secondParticipant = null; // = TODO: GET CHARACTER ASSET
                 // If the named character is found, set participants to the player and the second 
                 // participant.
                 if (secondParticipant != null)
@@ -140,7 +140,7 @@ namespace StoryState
                 }
                 else
                 {
-                    Character newParticipant = null; // = TODO: GET CHARACTER
+                    Character newParticipant = null; // = TODO: GET CHARACTER ASSET
                     // If the named character is found and not already in the participants list,
                     // add to valid participants list.
                     if (newParticipant != null && !validParticipants.Contains(newParticipant))

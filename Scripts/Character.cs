@@ -13,22 +13,17 @@ namespace StoryState
     [Serializable]
     public class Character : ScriptableObject
     {
-        public string Type => this.GetType().Name;
-        public string TypeAndFilename => "person:" + Filename;
-        public static string ConvertCharacterNameToFilename(string fullname)
-            => fullname.ToLower().Trim().Replace(' ', '-');
+        private enum ShortName { firstname, lastname, nickname, fullname }
 
         [SerializeField] private string _firstname;
         [SerializeField] private string _lastname;
         [SerializeField] private string _nickname;
-
         [SerializeField] private Texture2D _defaultPortrait;
-
         [SerializeField][Range(.35f, 2.15f)] private float _voicePitch = 1f;
-
-        private enum ShortName { firstname, lastname, nickname, fullname }
-
         [SerializeField] private ShortName _shortName;
+
+        public static string ConvertCharacterNameToFilename(string fullname)
+            => fullname.ToLower().Trim().Replace(' ', '-');
 
         public string Firstname => _firstname;
         public string Lastname => _lastname;
@@ -51,10 +46,12 @@ namespace StoryState
                 };
             }
         }
+
         public float VoicePitch => _voicePitch;
+
         public Texture2D GetPortrait(string emotion = "neutral", int style = 0)
         {
-            Texture2D portrait = null; // TODO: GET TEXTURE2D
+            Texture2D portrait = null; // TODO: GET TEXTURE2D ASSET
             return portrait != null ? portrait : _defaultPortrait;
         }
     }

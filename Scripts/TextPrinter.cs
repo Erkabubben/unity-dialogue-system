@@ -215,15 +215,15 @@ namespace StoryState
                     if (taskData._speaker != null)
                     {
                         // If a character is speaking, adjust printing sample to voice pitch.
-                        string printingSoundEffect = null; // TODO: GET SOUND EFFECT
+                        string printingSoundEffect = null; // TODO: GET SOUND EFFECT ASSET
 
                         //printingSoundEffect.Pitch = taskData._speaker.Character.VoicePitch;
-                        // TODO: PLAY SOUND EFFECT
+                        // TODO: PLAY SOUND EFFECT ASSET
                     }
                     else
                         // If noone is speaking, the printing sample plays anyway, with its default
                         // pitch value.
-                        // TODO: PLAY SOUND EFFECT
+                        // TODO: PLAY SOUND EFFECT ASSET
                 }
             }
 
@@ -265,7 +265,7 @@ namespace StoryState
         {
             // Set to true to allow the user to Succeed the Task immediately by pressing Left Ctrl -
             // useful for debugging.
-            if (false && Input.GetKey("left ctrl")) // TODO: SET TO TRUE WHEN DEBUGGING
+            if (false && Input.GetKey("left ctrl"))
                 Task.current.Succeed();
             // Checks the Succeed conditions of the PrintBehaviour.
             if (taskData._printBehaviour == PrintBehaviour.await
