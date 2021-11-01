@@ -7,7 +7,7 @@ namespace StoryState
     /*
     *   AnimatedPortrait
     *
-    *   When attatched to a GameObject with a RawImage and an optional Shadow child GO, the
+    *   When attached to a GameObject with a RawImage and an optional Shadow child GO, the
     *   AnimatedPortrait will update the RawImage to display the current portrait of its associated
     *   Participant. If a Shadow is used, the portrait will be shadowed if its associated Participant
     *   is not the current Speaker.

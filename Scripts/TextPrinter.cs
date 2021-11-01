@@ -58,7 +58,7 @@ namespace StoryState
             set => _lastSpeaker = value;
         }
 
-        // The 
+        // Determines the conditions for Suceeding the Print Task.
         public enum PrintBehaviour
         {
             await,  // The TextPrinter will await user input before Succeeding the Panda Task.
